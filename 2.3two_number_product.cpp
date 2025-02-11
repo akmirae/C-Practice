@@ -5,20 +5,23 @@
 // 함수로 두 수의 곱셈 결과 반환
 // multiply(int a, int b)라는 함수를 만들어 두 수의 곱을 반환하세요.
 // main 함수에서 사용자가 입력한 두 수를 함수에 전달하고 결과를 출력하세요.
+
 #include <iostream>
-int multiply(int a, int b){
+int multiply(int a, int b){ 
     return a * b;
 }
 int main() {
     int num1, num2;
-    std::cout << "Enter the first integer: ";
+
+    std::cout <<"Enter the first integer: " << std::endl;
     std::cin >> num1;
-    std::cout << "Enter the second integer: ";
+    std::cout <<"Enter the second integer: " << std::endl;
     std::cin >> num2;
 
     int result = multiply(num1, num2);
 
     std::cout << num1 << " X " << num2 << " = " << result << std::endl;
+
     return 0;
 }
 // #include <iostream>
